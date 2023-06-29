@@ -43,6 +43,7 @@
 
 body {
   margin: 0;
+  color: #1a1a1a;
 }
 
 html,
@@ -134,6 +135,7 @@ input:focus {
    padding: 8px 15px;
    box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.10);
    border-radius: 10px;
+   
 }
 
 @media(max-width:480px){
