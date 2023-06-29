@@ -1,0 +1,156 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
+
+body {
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  width: 100vw;
+  height: 100%;
+}
+
+.react-flow__node-mindmap {
+  border-radius: 2px;
+  background: #ff9600;
+  border: 1px solid transparent;
+  padding: 5px 5px;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+
+.react-flow__handle.target {
+  top : 50%;
+  pointer-events: none;
+  opacity: 0;
+
+}
+.react-flow .react-flow__connectionline {
+  z-index: 0;
+}
+
+
+.react-flow__handle.source {
+  top: 0;
+  left: 0;
+  transform: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+  background: #ff9600;
+}
+
+.inputWrapper {
+  display: flex;
+  height: 20px;
+  z-index: 1;
+  position: relative;
+  pointer-events: none;
+}
+
+.dragHandle{
+  background: transparent;
+  width: 14px;
+  height: 100%;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  pointer-events: all;
+}
+
+.input{
+  background: transparent;
+  border: none;
+  color: #000;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  padding: 0 2px;
+  font-weight: 700;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+  background: rgba(255,255,255, .025);
+  pointer-events: all;
+}
+
+
+.react-flow__panel-save-restore{
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.panel-save-restore__restore-btn, .panel-save-restore__save-btn, .panel-save-restore__download-btn, .panel-save-restore__export-btn{
+   background-color: #fff;
+   padding: 8px 15px;
+   box-shadow: 0px 10px 20px 1px rgba(0, 0, 0, 0.10);
+   border-radius: 10px;
+}
+
+@media(max-width:480px){
+    .panel-title{
+      /* left: 50% !important;
+      transform: translateX(-50%); */
+      text-align: center;
+       width: 100vw;
+    }
+
+    .react-flow__panel-save-restore{
+    
+    flex-wrap: wrap;
+    top: 7vh !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: 100vw;
+    justify-content: center;
+    }
+}
