@@ -140,7 +140,7 @@ function Flow() {
       <Panel position="top-right" className='react-flow__panel-save-restore'>    <DonwloadButton ></DonwloadButton> <button className='panel-save-restore__save-btn' onClick={handleSave}>Save</button><button className='panel-save-restore__restore-btn' onClick={handleRestore}>Restore </button> <button onClick={ exportToJson} className='panel-save-restore__export-btn'>Export</button> </Panel>
       
   
-      <Background gap={15}  color='#eee' variant={BackgroundVariant.Lines}></Background>
+      <Background gap={20}  color='#eee' variant={BackgroundVariant.Lines}></Background>
     </ReactFlow>
   );
 }
