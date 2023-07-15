@@ -4,6 +4,7 @@ import {toPng } from 'html-to-image';
 
 
 function downloadImage(dataUrl){
+    console.log(dataUrl)
     const a = document.createElement('a');
     a.setAttribute('download', 'reactflow-mindmap.png');
     a.setAttribute('href',dataUrl);
